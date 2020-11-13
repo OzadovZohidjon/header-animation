@@ -1,0 +1,214 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #121212;
+}
+
+body{
+	background: url(hero.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	overflow: hidden;												
+}
+
+img{
+	width: 100%;
+}
+
+.logo{
+	position: fixed;
+	line-height: 80px;
+	color: #fff;
+	margin-left: 2em;
+	font-size: 15px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+.logo ion-icon{
+	color: #6adb9d;
+	margin-right: 7px;
+	position: relative;
+	top: 1px;
+	z-index: 1;
+}
+
+.contact{
+	position: fixed;
+	color: rgb(124,124,124);
+	font-size: 12px;
+	letter-spacing: 2px;
+	right: 100px;
+	line-height: 80px;
+	z-index: 1;
+}
+
+.menu{
+	position: fixed;
+	color: #6adb9d;
+	right: 2em;
+	top: 4px;
+	line-height: 80px;
+	z-index: 1;
+}
+
+.menu ion-icon{
+	font-size: 24px;
+}
+
+.header{
+	position: absolute;
+	top: 46%;
+	left: 38%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.m17{
+	position: relative;
+	font-weight: 900;
+	font-size: 3.7em;
+}
+
+.m17 .wrapper{
+	position: relative;
+	display: inline-block;
+	padding: 0.2em 0.05em 0.1em 0;
+	overflow: hidden;
+}
+
+.m17 .letter{
+	transform-origin: 0% 100%;
+	display: inline-block;	
+	line-height: 1.7em;
+}
+
+h1{
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	font-size: 46px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+#tagline{
+	width: 640px;
+}
+
+p{
+	color: rgb(95, 95, 95);
+	font-weight: 200;
+	font-family: 'Roboto', sans-serif;
+	line-height: 28px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.buttons{
+	margin-top: 40px;
+}
+
+button{
+	margin-right: 10px;
+	padding: 14px 30px;
+	color: #fff;
+	font-size: 12px;
+	letter-spacing: 4px;
+	font-weight: 300;
+}
+
+#one{
+	background: none;
+	border: .3pt solid rgba(255, 255, 255, 0.3);
+}
+
+#two{
+	background: linear-gradient(135deg, rgba(106, 219, 157) 0%, rgba(23, 167, 88) 100%);
+	border: .3pt solid rgba(106, 219, 157);
+
+}
+
+.media{
+	position: absolute;
+	top: 38%;
+	right: -40%;
+	z-index: 1;
+}
+
+.media ul{
+	position: absolute;
+	list-style: none;
+}
+
+.media ul li{
+	display: inline-block;
+	color: grey;
+	padding: 12px 0;
+}
+
+.bottom-text{
+	position: absolute;
+	z-index: 1;
+	color: grey;
+	font-family: monospace;
+	font-size: 18px;
+	margin-left: 2em;	
+	/*bottom: 40px;*/
+}
+
+.copyright{
+	position: absolute;
+	z-index: 1;
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin-left: 2em;	
+	margin-right: 2em;	
+	right: 0%;
+	/*bottom: 40px;*/
+}
+
+.loading-screen{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	background: #0a0a0a;
+}
+
+.ring{
+	margin: 0%;
+	padding: 0%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	width: 40%;
+	/*height: 100%;*/
+	opacity: 0.7;
+	z-index: 2;
+}
+
+
+.ringOne img{
+	animation: rotateRing 2s linear infinite;
+}
+
+.ringTwo img{
+	animation: rotateRing 8s linear infinite;
+}
+
+@keyframes rotateRing {
+	from{
+		transform: rotate(0deg);
+	}	
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
